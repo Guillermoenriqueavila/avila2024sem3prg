@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera chamba sem3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        label, #resultadoVelocidad, #resultadoTriangulo, #resultadoOperacion, #resultadoPrimo {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> Mi primera chamba sem3 </h1>
+        <h3>GUILLERMO ENRIQUE AVILA VILLATORO/ SMSS142521</h3>
+    </header>
+
+    <section id="ejercicio1">
+        <h2>Ejercicio 1: Calcular Velocidad</h2>
+        <div class="input-group">
+            <label for="distancia">Distancia (km):</label>
+            <input type="text" id="distancia" />
+        </div>
+        <div class="input-group">
+            <label for="tiempo">Tiempo (min):</label>
+            <input type="text" id="tiempo" />
+        </div>
+        <button onclick="calcularVelocidad()">Calcular Velocidad</button>
+        <label id="resultadoVelocidad"></label>
+    </section>
+
+    <section id="ejercicio2">
+        <h2>Ejercicio 2: Clasificar Triángulo</h2>
+        <div class="input-group">
+            <label for="lado1">Lado 1:</label>
+            <input type="text" id="lado1" />
+        </div>
+        <div class="input-group">
+            <label for="lado2">Lado 2:</label>
+            <input type="text" id="lado2" />
+        </div>
+        <div class="input-group">
+            <label for="lado3">Lado 3:</label>
+            <input type="text" id="lado3" />
+        </div>
+        <button onclick="clasificarTriangulo()">Clasificar Triángulo</button>
+        <label id="resultadoTriangulo"></label>
+    </section>
+
+    <section id="ejercicio3">
+        <h2>Ejercicio 3: Calculadora</h2>
+        <div class="input-group">
+            <label for="numero1">Número 1:</label>
+            <input type="text" id="numero1" />
+        </div>
+        <div class="input-group">
+            <label for="numero2">Número 2:</label>
+            <input type="text" id="numero2" />
+        </div>
+        <div class="input-group">
+            <label for="operacion">Selecciona la operación:</label>
+            <select id="operacion">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicación</option>
+                <option value="division">División</option>
+            </select>
+        </div>
+        <button onclick="calcularOperacion()">Calcular</button>
+        <label id="resultadoOperacion"></label>
+    </section>
+
+    <section id="ejercicio4">
+        <h2>Ejercicio 4: Verificar Número Primo</h2>
+        <div class="input-group">
+            <label for="numeroPrimo">Ingrese un número:</label>
+            <input type="text" id="numeroPrimo" />
+        </div>
+        <button onclick="esPrimo()">Verificar Primo</button>
+        <label id="resultadoPrimo"></label>
+    </section>
+
+    <footer>
+        <p>&copy; 02/02/2024 Derechos reservados de memillo el gordillo</p>
+    </footer>
+
+
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    label,
+    #resultadoVelocidad,
+    #resultadoTriangulo,
+    #resultadoOperacion,
+    #resultadoPrimo {
+        font-size: 16px;
+    }
+
+    /* Aqui se ajusta para la sección de Ejercicio 4 */
+    #ejercicio4 {
+        margin-bottom: 50px; 
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px; 
+    }
+</style>
+
+
+
+
+</body>
+</html>
+
+
